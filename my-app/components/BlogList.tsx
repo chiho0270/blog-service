@@ -10,7 +10,7 @@ export function BlogList({ posts, onSelectPost }: BlogListProps) {
   if (posts.length === 0) {
     return (
       <div className="bg-white rounded-lg shadow-sm p-12 text-center">
-        <p className="text-gray-500 text-lg">No posts found matching your criteria.</p>
+        <p className="text-gray-500 text-lg">검색 조건에 맞는 포스트가 없습니다.</p>
       </div>
     );
   }
@@ -42,15 +42,15 @@ export function BlogList({ posts, onSelectPost }: BlogListProps) {
             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-4">
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
-                <time>{new Date(post.date).toLocaleDateString('en-US', { 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
+                <time>{new Date(post.date).toLocaleDateString('ko-KR', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
                 })}</time>
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />
-                <span>{post.readTime} min read</span>
+                <span>{post.readTime}분 읽기</span>
               </div>
               <div className="flex items-center gap-1">
                 <span>By {post.author}</span>
@@ -79,7 +79,7 @@ export function BlogList({ posts, onSelectPost }: BlogListProps) {
           {/* Read More Footer */}
           <div className="px-6 py-3 bg-gray-50 border-t border-gray-100">
             <span className="text-blue-600 font-medium hover:text-blue-700 transition-colors">
-              Read full article →
+              전체 아티클 읽기 →
             </span>
           </div>
         </article>
