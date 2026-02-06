@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 import { MessageCircle, ThumbsUp, Reply } from 'lucide-react';
 import type { Comment } from '../types/blog';

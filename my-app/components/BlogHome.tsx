@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 import { BlogPost } from './BlogPost';
 import { SearchBar } from './SearchBar';

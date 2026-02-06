@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 import { ArrowLeft, Calendar, Clock, Tag, Share2, Bookmark } from 'lucide-react';
 import { CodeBlock } from './CodeBlock';
